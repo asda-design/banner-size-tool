@@ -633,21 +633,21 @@ function buttonsActive() {
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
         } else if (widthV == 1064 && heightV == 266) {
-            document.getElementById('detect').innerHTML = "Legacy - IAB_Billboard";
-            document.getElementById('detect').style.color = '#ff8200';
+            document.getElementById('detect').innerHTML = "Multi Expanded Billboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MultiExpandedBillboard1064();buttonsActive();\">Multi Expanded Billboard</button></div>";
+            document.getElementById('detect').style.color = '#538316';
             var detectStatus = document.getElementById("detect");
             detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 300 && heightV == 300) {
-            document.getElementById('detect').innerHTML = "Prism";
-            document.getElementById('detect').style.color = '#ff8200';
+            document.getElementById('detect').innerHTML = "300x300 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"PrismFormat();buttonsActive();\">Prism</button> <button class=\"format-button\" onclick=\"MultiExpandTile();buttonsActive();\">Multi Expand Tile</button></div>";
+            document.getElementById('detect').style.color = '#538316';
             var detectStatus = document.getElementById("detect");
             detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 540 && heightV == 300) {
@@ -894,7 +894,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = 300;
         } else if (widthV == 540 && heightV == 860) {
-            document.getElementById('detect').innerHTML = "Expanded MPU Portrait <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"ExpandedMPUPortrait();buttonsActive();\">Expanded MPU Portrait</button></div>";
+            document.getElementById('detect').innerHTML = "540x860 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"ExpandedMPUPortrait();buttonsActive();\">Expanded MPU Portrait</button> <button class=\"format-button\" onclick=\"MultiExpandedTilePortrait();buttonsActive();\">Multi Expanded Tile Portrait</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -903,7 +903,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = 270;
         } else if (widthV == 1848 && heightV == 1000) {
-            document.getElementById('detect').innerHTML = "1848x1000 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"BrandburstLandscape();buttonsActive();\">Brandburst Expanded</button> <button class=\"format-button\" onclick=\"ExpandedLeaderboardLandscape();buttonsActive();\">Expanded Leaderboard</button></div>";
+            document.getElementById('detect').innerHTML = "1848x1000 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"BrandburstLandscape();buttonsActive();\">Brandburst Expanded</button> <button class=\"format-button\" onclick=\"ExpandedLeaderboardLandscape();buttonsActive();\">Expanded Leaderboard</button> <button class=\"format-button\" onclick=\"MultiExpandedBillboard();buttonsActive();\">Multi Expanded Billboard</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -911,6 +911,15 @@ function buttonsActive() {
             detectStatus.classList.remove("legacy");
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = 924;
+        } else if (widthV == 1068 && heightV == 266) {
+            document.getElementById('detect').innerHTML = "Multi Expand Billboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MultiExpandBillboard();buttonsActive();\">Multi Expand Billboard</button></div>";
+            document.getElementById('detect').style.color = '#538316';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
+            document.querySelector(".imagecontainer").style.maxWidth = 1068;
       } else {
             document.getElementById('detect').innerHTML = "Template Not Detected";
             document.getElementById('detect').style.color = '#d43030';
@@ -1352,8 +1361,46 @@ setOverlayText(null, true);
 }    
 function ExpandedMPUPortrait() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
-document.getElementById('formats-title').innerHTML = "";
+document.getElementById('formats-title').innerHTML = "Expanded MPU Portrait";
 document.querySelector(".imagecontainer").style.maxWidth = "270px";
+setOverlayText(null, true);
+}    
+
+//Multi Expand Formats
+function MultiExpandTile() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "Multi Expand Tile";
+document.querySelector(".imagecontainer").style.maxWidth = "300px";
+setOverlayText(null, true);
+}    
+function MultiExpandedTilePortrait() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "Multi Expanded Tile Portrait";
+document.querySelector(".imagecontainer").style.maxWidth = "270px";
+setOverlayText(null, true);
+}    
+function MultiExpandedBillboard() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "Multi Expanded Billboard";
+document.querySelector(".imagecontainer").style.maxWidth = "924px";
+setOverlayText(null, true);
+}    
+function MultiExpandBillboard() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "1068px";
+setOverlayText(null, true);
+}    
+function MultiExpandedBillboard1064() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "1064px";
+setOverlayText(null, true);
+}    
+function PrismFormat() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "Prism";
+document.querySelector(".imagecontainer").style.maxWidth = "300px";
 setOverlayText(null, true);
 }    
 </script>
