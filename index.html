@@ -623,22 +623,13 @@ function buttonsActive() {
             detectStatus.classList.add("legacy");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
-        } else if (widthV == 1848 && heightV == 1000) {
-            document.getElementById('detect').innerHTML = "Legacy - IAB_Expandable_Landscape/Brandbust Stage 2 Landscape";
-            document.getElementById('detect').style.color = '#ff8200';
+        } else if (widthV == 1124 && heightV == 1756) {
+            document.getElementById('detect').innerHTML = "Brandburst Expanded - Portrait <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"BrandburstPortrait();buttonsActive();\">Brandburst Expanded</button></div>";
+            document.getElementById('detect').style.color = '#538316';
             var detectStatus = document.getElementById("detect");
             detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
-            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
-            document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
-        } else if (widthV == 540 && heightV == 860) {
-            document.getElementById('detect').innerHTML = "Legacy - IAB_Expandable_Portrait";
-            document.getElementById('detect').style.color = '#ff8200';
-            var detectStatus = document.getElementById("detect");
-            detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
         } else if (widthV == 1064 && heightV == 266) {
@@ -740,24 +731,6 @@ function buttonsActive() {
             detectStatus.classList.add("legacy");
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
-        } else if (widthV == 1848 && heightV == 1000) {
-            document.getElementById('detect').innerHTML = "Legacy - IAB_Expandable_Landscape";
-            document.getElementById('detect').style.color = '#ff8200';
-            var detectStatus = document.getElementById("detect");
-            detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
-            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
-            document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
-        } else if (widthV == 540 && heightV == 860) {
-            document.getElementById('detect').innerHTML = "Legacy - IAB_Expandable_Portrait";
-            document.getElementById('detect').style.color = '#ff8200';
-            var detectStatus = document.getElementById("detect");
-            detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
-            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
-            document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 409 && heightV == 299) {
             document.getElementById('detect').innerHTML = "Legacy - Win Panel";
             document.getElementById('detect').style.color = '#ff8200';
@@ -769,15 +742,6 @@ function buttonsActive() {
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 280 && heightV == 280) {
             document.getElementById('detect').innerHTML = "Legacy - Brand burst Stage 1";
-            document.getElementById('detect').style.color = '#ff8200';
-            var detectStatus = document.getElementById("detect");
-            detectStatus.classList.remove("negative");
-            detectStatus.classList.remove("positive");
-            detectStatus.classList.add("legacy");
-            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
-            document.querySelector(".imagecontainer").style.maxWidth = widthV/2;
-        } else if (widthV == 1124 && heightV == 1756) {
-            document.getElementById('detect').innerHTML = "Legacy - Brand burst Stage 2 Portrait";
             document.getElementById('detect').style.color = '#ff8200';
             var detectStatus = document.getElementById("detect");
             detectStatus.classList.remove("negative");
@@ -911,6 +875,42 @@ function buttonsActive() {
             detectStatus.classList.remove("legacy");
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
+        } else if (widthV == 728 && heightV == 90) {
+            document.getElementById('detect').innerHTML = "Expandable Leaderboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"ExpandableLeaderboard();buttonsActive();\">Expandable Leaderboard</button></div>";
+            document.getElementById('detect').style.color = '#538316';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
+            document.querySelector(".imagecontainer").style.maxWidth = 728;
+        } else if (widthV == 300 && heightV == 250) {
+            document.getElementById('detect').innerHTML = "Expandable MPU <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"ExpandableMPU();buttonsActive();\">Expandable MPU</button></div>";
+            document.getElementById('detect').style.color = '#538316';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
+            document.querySelector(".imagecontainer").style.maxWidth = 300;
+        } else if (widthV == 540 && heightV == 860) {
+            document.getElementById('detect').innerHTML = "Expanded MPU Portrait <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"ExpandedMPUPortrait();buttonsActive();\">Expanded MPU Portrait</button></div>";
+            document.getElementById('detect').style.color = '#538316';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
+            document.querySelector(".imagecontainer").style.maxWidth = 270;
+        } else if (widthV == 1848 && heightV == 1000) {
+            document.getElementById('detect').innerHTML = "1848x1000 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"BrandburstLandscape();buttonsActive();\">Brandburst Expanded</button> <button class=\"format-button\" onclick=\"ExpandedLeaderboardLandscape();buttonsActive();\">Expanded Leaderboard</button></div>";
+            document.getElementById('detect').style.color = '#538316';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+            var detectStatus = document.getElementById("detect");
+            detectStatus.classList.remove("negative");
+            detectStatus.classList.remove("legacy");
+            detectStatus.classList.add("positive");
+            document.querySelector(".imagecontainer").style.maxWidth = 924;
       } else {
             document.getElementById('detect').innerHTML = "Template Not Detected";
             document.getElementById('detect').style.color = '#d43030';
@@ -1312,6 +1312,48 @@ setOverlayText(14);
 function BackgroundSkin() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Skin?scl=1&fmt=png-alpha';
 document.getElementById('formats-title').innerHTML = " - Background Skin";
+setOverlayText(null, true);
+}    
+
+//1848x1000 Expandables
+function BrandburstLandscape() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = " - Brandburst Expanded Landscape";
+document.querySelector(".imagecontainer").style.maxWidth = "924px";
+setOverlayText(null, true);
+}    
+function ExpandedLeaderboardLandscape() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = " - Expanded Leaderboard Landscape";
+document.querySelector(".imagecontainer").style.maxWidth = "924px";
+setOverlayText(null, true);
+}    
+
+//Brandburst Portrait
+function BrandburstPortrait() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "562px";
+setOverlayText(null, true);
+}    
+
+//Other Expandables
+function ExpandableLeaderboard() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "728px";
+setOverlayText(null, true);
+}    
+function ExpandableMPU() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "300px";
+setOverlayText(null, true);
+}    
+function ExpandedMPUPortrait() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "";
+document.querySelector(".imagecontainer").style.maxWidth = "270px";
 setOverlayText(null, true);
 }    
 </script>
