@@ -748,7 +748,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 900 && heightV == 900) {
-            document.getElementById('detect').innerHTML = "1x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"OneOnePromo();buttonsActive();\">Promo</button> <button class=\"format-button\" onclick=\"OneOneTile();buttonsActive();\">Tile</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperFront();buttonsActive();\">Ad Flipper Front</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperBack();buttonsActive();\">Ad Flipper Back</button> <button class=\"format-button\" onclick=\"OneOneTrolley();buttonsActive();\">Trolley</button> <button class=\"format-button\" onclick=\"OneOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"OneOneCompetitons();buttonsActive();\">Competitons</button> <button class=\"format-button\" onclick=\"OneOneBrandedPage();buttonsActive();\">Branded Page Mobile</button> <button class=\"format-button\" onclick=\"OneOneCountdown();buttonsActive();\">Countdown Promo</button> <button class=\"format-button\" onclick=\"OneOneCatNav();buttonsActive();\">CatNav Mobile</button> <button class=\"format-button\" onclick=\"OneOneDeptNav();buttonsActive();\">DeptNav Mobile</button> <button class=\"format-button\" onclick=\"OneOnePromoFB();buttonsActive();\">PromoFB</button> <button class=\"format-button\" onclick=\"OneOneShopNav();buttonsActive();\">ShopNav Mobile</button> <button class=\"format-button\" onclick=\"OneOneTakeover();buttonsActive();\">Takeover Promo/Tile</button> </div>";
+            document.getElementById('detect').innerHTML = "1x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"OneOnePromo();buttonsActive();\">Promo</button> <button class=\"format-button\" onclick=\"OneOneTile();buttonsActive();\">Tile</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperFront();buttonsActive();\">Ad Flipper Front</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperBack();buttonsActive();\">Ad Flipper Back</button> <button class=\"format-button\" onclick=\"OneOneTrolley();buttonsActive();\">Trolley</button> <button class=\"format-button\" onclick=\"OneOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"OneOneCompetitons();buttonsActive();\">Competitons</button> <button class=\"format-button\" onclick=\"OneOneBrandedPage();buttonsActive();\">Branded Page Mobile</button> <button class=\"format-button\" onclick=\"OneOneCountdown();buttonsActive();\">Countdown Promo</button> <button class=\"format-button\" onclick=\"OneOneCatNav();buttonsActive();\">CatNav Mobile</button> <button class=\"format-button\" onclick=\"OneOneDeptNav();buttonsActive();\">DeptNav Mobile</button> <button class=\"format-button\" onclick=\"OneOnePromoFB();buttonsActive();\">PromoFB</button> <button class=\"format-button\" onclick=\"OneOneShopNav();buttonsActive();\">ShopNav Mobile</button> <button class=\"format-button\" onclick=\"OneOneTakeover();buttonsActive();\">Takeover Promo/Tile</button> <button class=\"format-button\" onclick=\"ExpandablePromo();buttonsActive();\">Expandable Promo</button> </div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_1x1_Tile?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -1315,7 +1315,13 @@ document.getElementById('formats-title').innerHTML = "Expanded MPU Portrait";
 document.querySelector(".imagecontainer").style.maxWidth = "270px";
 setOverlayText(null, true);
 }    
-
+function ExpandablePromo() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/ExpandablePromo_New_Site_1x1_boundary?scl=1&hei=1&wid=1&fmt=png-alpha';
+document.getElementById('formats-title').innerHTML = "Expandable Promo";
+document.querySelector(".imagecontainer").style.maxWidth = "285px";
+setOverlayText(null, true);
+}
+    
 //Multi Expand Formats
 function MultiExpandTile() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_Icon_Media_Black?scl=1&hei=1&wid=1&fmt=png-alpha';
