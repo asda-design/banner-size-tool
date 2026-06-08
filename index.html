@@ -829,9 +829,9 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 600 && heightV == 500) {
-            document.getElementById('detect').innerHTML = "MPU <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MPUHomepage();buttonsActive();\">Homepage</button> <button class=\"format-button\" onclick=\"MPUCTA();buttonsActive();\">Dynamic Elements</button> <button class=\"format-button\" onclick=\"MPUMobile();buttonsActive();\">Mobile</button> </div>";
+            document.getElementById('detect').innerHTML = "MPU <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MPUHomepage();buttonsActive();\">Homepage MPU</button> <button class=\"format-button\" onclick=\"MPUMobile();buttonsActive();\">Leaderboard/MPU Mobile</button> </div>";
             document.getElementById('detect').style.color = '#538316';
-            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU?scl=1&fmt=png-alpha';
+            document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU_Homepage?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
             detectStatus.classList.remove("negative");
             detectStatus.classList.remove("legacy");
@@ -1254,7 +1254,7 @@ setOverlayText(null, true);
 function LeaderboardCTA() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard?scl=1&fmt=png-alpha';
 document.getElementById("overlayimageoutput").style.width = "";
-document.getElementById('formats-title').innerHTML = " - Leaderboard";
+document.getElementById('formats-title').innerHTML = " - Leaderboard/MPU";
 document.querySelector(".imagecontainer").style.maxWidth = "728px"
 setOverlayText(16);
 }   
@@ -1268,24 +1268,24 @@ setOverlayText(16);
         
 //MPU
 function MPUHomepage() {
-document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU_Homepage?scl=1&fmt=png-alpha';
 document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Homepage";
-document.querySelector(".imagecontainer").style.maxWidth = "288px"
+document.querySelector(".imagecontainer").style.maxWidth = "300px"
 setOverlayText(14);
 }    
 function MPUCTA() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU?scl=1&fmt=png-alpha';
 document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Dynamic Elements";
-document.querySelector(".imagecontainer").style.maxWidth = "288px"
+document.querySelector(".imagecontainer").style.maxWidth = "300px"
 setOverlayText(14);
 }
 function MPUMobile() {
-document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU_Mobile?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard_MPU_Mobile?scl=1&fmt=png-alpha';
 document.getElementById("overlayimageoutput").style.width = "";
-document.getElementById('formats-title').innerHTML = " - Mobile";
-document.querySelector(".imagecontainer").style.maxWidth = "288px"
+document.getElementById('formats-title').innerHTML = " - Leaderboard/MPU Mobile";
+document.querySelector(".imagecontainer").style.maxWidth = "300px"
 setOverlayText(14);
 }
 
