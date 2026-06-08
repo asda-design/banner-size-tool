@@ -820,7 +820,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 1456 && heightV == 180) {
-            document.getElementById('detect').innerHTML = "Leaderboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"LeaderboardCTA();buttonsActive();\">Leaderboard</button> <button class=\"format-button\" onclick=\"LeaderboardEAC();buttonsActive();\">Search EAC</button></div>";
+            document.getElementById('detect').innerHTML = "Leaderboard <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"LeaderboardCTA();buttonsActive();\">Leaderboard</button> <button class=\"format-button\" onclick=\"LeaderboardEAC();buttonsActive();\">Search EAC</button> <button class=\"format-button\" onclick=\"DynamicCountdownLeaderboard();buttonsActive();\">Dynamic Countdown Leaderboard/MPU</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -829,7 +829,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 600 && heightV == 500) {
-            document.getElementById('detect').innerHTML = "MPU <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MPUHomepage();buttonsActive();\">Homepage MPU</button> <button class=\"format-button\" onclick=\"MPUMobile();buttonsActive();\">Leaderboard/MPU Mobile</button> </div>";
+            document.getElementById('detect').innerHTML = "MPU <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"MPUHomepage();buttonsActive();\">Homepage MPU</button> <button class=\"format-button\" onclick=\"MPUMobile();buttonsActive();\">Leaderboard/MPU Mobile</button> <button class=\"format-button\" onclick=\"DynamicSportMPU();buttonsActive();\">Dynamic Sport Leaderboard/MPU</button> <button class=\"format-button\" onclick=\"DynamicCountdownMPU();buttonsActive();\">Dynamic Countdown Leaderboard/MPU</button></div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_MPU_Homepage?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -1099,6 +1099,13 @@ document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Trolley";
 document.querySelector(".imagecontainer").style.maxWidth = "285px"
 setOverlayText(14);
+}
+function OneOneDynamicSportPromo() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_DSC_Promo?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Dynamic Sport Promo";
+document.querySelector(".imagecontainer").style.maxWidth = "256px"
+setOverlayText(14);
 }   
     
 //1x2
@@ -1264,7 +1271,21 @@ document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Search EAC Desktop";
 document.querySelector(".imagecontainer").style.maxWidth = "626px"
 setOverlayText(16);
-}   
+}
+function DynamicSportsContentLeaderboard() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_DSC_Leaderboard?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Dynamic Sport Leaderboard/MPU";
+document.querySelector(".imagecontainer").style.maxWidth = "728px"
+setOverlayText(16);
+}
+function DynamicCountdownLeaderboard() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_DC_Leaderboard?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Dynamic Countdown Leaderboard/MPU";
+document.querySelector(".imagecontainer").style.maxWidth = "728px"
+setOverlayText(16);
+}  
         
 //MPU
 function MPUHomepage() {
@@ -1285,6 +1306,20 @@ function MPUMobile() {
 document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_Leaderboard_MPU_Mobile?scl=1&fmt=png-alpha';
 document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Leaderboard/MPU Mobile";
+document.querySelector(".imagecontainer").style.maxWidth = "300px"
+setOverlayText(14);
+}
+function DynamicSportMPU() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_DSC_MPU?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Dynamic Sport Leaderboard/MPU";
+document.querySelector(".imagecontainer").style.maxWidth = "300px"
+setOverlayText(14);
+}
+function DynamicCountdownMPU() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_DC_MPU?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Dynamic Countdown Leaderboard/MPU";
 document.querySelector(".imagecontainer").style.maxWidth = "300px"
 setOverlayText(14);
 }
