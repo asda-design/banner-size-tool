@@ -748,7 +748,7 @@ function buttonsActive() {
             detectStatus.classList.add("positive");
             document.querySelector(".imagecontainer").style.maxWidth = widthV;
         } else if (widthV == 900 && heightV == 900) {
-            document.getElementById('detect').innerHTML = "1x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"OneOneTile();buttonsActive();\">Tile</button> <button class=\"format-button\" onclick=\"OneOnePromoFB();buttonsActive();\">Promo FB</button> <button class=\"format-button\" onclick=\"OneOneBrandedPage();buttonsActive();\">Branded Page Mobile</button> <button class=\"format-button\" onclick=\"OneOneCatNav();buttonsActive();\">Cat Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneDeptNav();buttonsActive();\">Dept Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneShopNav();buttonsActive();\">Shop Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"OneOneCompetitons();buttonsActive();\">Win Panel Mobile</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperFront();buttonsActive();\">Ad Flipper Front</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperBack();buttonsActive();\">Ad Flipper Back</button> <button class=\"format-button\" onclick=\"OneOneTrolley();buttonsActive();\">Trolley</button> <button class=\"format-button\" onclick=\"OneOneCountdown();buttonsActive();\">Countdown Promo</button> <button class=\"format-button\" onclick=\"ExpandablePromo();buttonsActive();\">Expandable Promo</button> <button class=\"format-button\" onclick=\"OneOneCountdownTile();buttonsActive();\">Countdown Tile</button> </div>";
+            document.getElementById('detect').innerHTML = "1x1 <span id=\"formats-title\"></span> <div id=\"toolBtns\" class=\"formats-container\"> <button class=\"format-button\" onclick=\"OneOneTile();buttonsActive();\">Tile</button> <button class=\"format-button\" onclick=\"OneOnePromoFB();buttonsActive();\">Promo FB</button> <button class=\"format-button\" onclick=\"OneOneBrandedPage();buttonsActive();\">Branded Page Mobile</button> <button class=\"format-button\" onclick=\"OneOneCatNav();buttonsActive();\">Cat Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneDeptNav();buttonsActive();\">Dept Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneShopNav();buttonsActive();\">Shop Nav Mobile</button> <button class=\"format-button\" onclick=\"OneOneSBA();buttonsActive();\">SBA</button> <button class=\"format-button\" onclick=\"OneOneCompetitons();buttonsActive();\">Win Panel Mobile</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperFront();buttonsActive();\">Ad Flipper Front</button> <button class=\"format-button\" onclick=\"OneOneAdFlipperBack();buttonsActive();\">Ad Flipper Back</button> <button class=\"format-button\" onclick=\"OneOneTrolley();buttonsActive();\">Trolley</button> <button class=\"format-button\" onclick=\"OneOneCountdown();buttonsActive();\">Countdown Promo</button> <button class=\"format-button\" onclick=\"ExpandablePromo();buttonsActive();\">Expandable Promo</button> <button class=\"format-button\" onclick=\"OneOneCountdownTile();buttonsActive();\">Countdown Tile</button> <button class=\"format-button\" onclick=\"OneOneVideoPromo();buttonsActive();\">Video Promo</button> </div>";
             document.getElementById('detect').style.color = '#538316';
             document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/AsdaGuidelines_TemplateOverlay_Guidelines_1x1_Tile?scl=1&fmt=png-alpha';
             var detectStatus = document.getElementById("detect");
@@ -1113,6 +1113,15 @@ document.getElementById("overlayimageoutput").style.width = "";
 document.getElementById('formats-title').innerHTML = " - Countdown Tile";
 document.querySelector(".imagecontainer").style.maxWidth = "328px"
 setOverlayText(14);
+}  
+function OneOneVideoPromo() {
+document.getElementById("overlayimageoutput").src = 'https://asdagroceries.scene7.com/is/image/asdagroceries/ASDAGuidelines_BannerCheckerTool_Video_Promo?scl=1&fmt=png-alpha';
+document.getElementById("overlayimageoutput").style.width = "";
+document.getElementById('formats-title').innerHTML = " - Video Promo";
+document.querySelector(".imagecontainer").style.maxWidth = "328px"
+setOverlayText(14);
+}  
+    
     
 //1x2
     
