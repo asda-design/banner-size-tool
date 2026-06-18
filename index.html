@@ -50,9 +50,6 @@
 
     }
     
-    .camp-header {
-    background: #538316;
-    }
     .camp-header svg {
     fill: #fff;
     max-width: 200px;
@@ -115,89 +112,70 @@
     /* Custom Asda Menu */
 
     .camp-menu-container {
+        display: block;
         position: absolute;
-        max-width: 500px;
-        margin: auto;
-        padding-right: 35px;
-        top: 22px;
-        color: #fff;
-        font-weight: 700;
-        font-size: 20px;
-        right: 0;
-        font-family: sans-serif;
+        top: 30px;
+        right: 36px;
+        z-index: 1000;
     }
 
-    .camp-menu-link {
-        padding: 15px;
-        border-radius: 5px;
-    }
-
-    .camp-menu {
-        width: 250px;
-        visibility: hidden;
-        position: absolute;
-        right: 0;
-        top: 0;
+    /* Hamburger */
+    .camp-hamburger {
+        width: 42px;
+        height: 42px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
         display: flex;
-        top: 50px;
-        right: 30px;
         flex-direction: column;
-        font-size: 16px;
-        background: #eee;
-        padding: 20px;
-        gap: 10px;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .camp-hamburger span {
+        width: 28px;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        display: block;
+        transition: all .3s ease;
+    }
+
+    /* Menu */
+    .camp-menu {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 250px;
+        background: #f3f3f3;
         border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        padding: 10px 0;
+        box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    }
+
+    .camp-menu.active {
+        display: flex;
     }
 
     .camp-menu a {
-        text-decoration: none;
+        padding: 12px 16px;
         color: #3d3d3d;
+        text-decoration: none;
     }
 
     .camp-menu a:hover {
-        color: #000;
-    }
-
-
-    .camp-menu-container:hover .camp-menu {
-        visibility: visible;
-    }
-    
-    @media screen and (max-width:1392px) {
-        .camp-menu-container {
-            padding-right: 30px;
-        }
+        background: #538316;
+        color: #fff;
     }
 
     @media screen and (max-width:1024px) {
         .camp-menu-container {
-            top: 45px;
+            top: 32px;
+            right: 30px;
         }
-    }
-
-
-    .camp-menu-container:hover .camp-menu-link {
-        background: #3d3d3d;
-        color: #eee;
-    }
-
-    .camp-menu-link {
-        background: #eee;
-        color: #3d3d3d;
-    }
-
-    .camp-menu {
-        padding: 10px 0px;
-        z-index: 1;
-    }
-
-    .camp-menu a {
-        padding: 10px;
-    }
-
-    .camp-menu a:hover {
-        background: #3d3d3d;
-        color: #eee !important;
     }
 
     .formats-container {
@@ -224,7 +202,8 @@ background: #f9da62;
 color: #000;
 }
 .camp-header-logo {
-text-align: center
+text-align: center;
+background: #538316;
 }
 h1 {
 text-align: center
@@ -239,16 +218,18 @@ text-align: center
         </svg>
     </div>
     <div class="camp-menu-container">
-        <div class="camp-menu-link">Menu</div>
-        <div class="camp-menu">
-            <a href="/event/branded-page-creator">Branded Page Creator</a>
-            <a href="/event/takeover-creator">Takeover Creator</a>
-            <a href="/event/competition-page-creator">Competition Page Creator</a>
-            <a href="/event/tools_contentchecker">Content Checker</a>
-            <a href="/event/banner-size-tool">Banner Size Tool</a>
-            <a href="/event/takeover-background-tool" target="_blank">Takeover Background Tool</a>
-        </div>
+
+    <button class="camp-hamburger" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="camp-menu">
+        <a href="https://www.asda.com/guidelines-home">Asda Guidelines Homepage</a>
+        <a href="https://asda-design.github.io/takeover-preview-tool/">Asda Takeover Preview Tool</a>
     </div>
+
 </div>
 
 <style>
@@ -1466,4 +1447,24 @@ document.getElementById('formats-title').innerHTML = "Prism";
 document.querySelector(".imagecontainer").style.maxWidth = "300px";
 setOverlayText(null, true);
 }    
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const hamburger = document.querySelector('.camp-hamburger');
+    const menu = document.querySelector('.camp-menu');
+
+    hamburger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menu.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function() {
+        menu.classList.remove('active');
+    });
+
+    menu.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
+});
 </script>
